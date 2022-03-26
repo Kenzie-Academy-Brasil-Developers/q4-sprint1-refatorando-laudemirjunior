@@ -1,3 +1,5 @@
+import { companies } from "../configs";
+
 export const verifyCompanyExistenceMiddleware = (req, res, next) => {
   let { cnpj } = req.params;
 

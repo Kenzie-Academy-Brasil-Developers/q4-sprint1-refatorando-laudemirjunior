@@ -6,3 +6,5 @@ export const config = {
   secret: process.env.SECRET,
   expiresIn: process.env.EXPIRESIN,
 };
+
+export const companies = [];

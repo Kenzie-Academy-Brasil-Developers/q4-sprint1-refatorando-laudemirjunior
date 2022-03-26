@@ -1,4 +1,4 @@
-import { companies } from "../services";
+import { companies } from "../configs";
 
 export const deleteCompanyController = (req, res) => {
   let { cnpj } = req.params;

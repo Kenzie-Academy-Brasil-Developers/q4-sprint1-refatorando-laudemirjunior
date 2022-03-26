@@ -1,4 +1,4 @@
-import { companies } from "../services";
+import { companies } from "../configs";
 
 export const verifyDuplicateCnpjMiddleware = (req, res, next) => {
   let { cnpj } = req.body;

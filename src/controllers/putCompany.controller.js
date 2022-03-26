@@ -1,12 +1,7 @@
-import { companies } from "../services";
+import { putCompanyService } from "../services";
 
-export const putCompanyController = (req, res) => {
-  let { company } = req;
-  let updatedCompany = { ...company, ...req.body };
+export const putCompanyController = async (req, res) => {
+  const responseData = await putCompanyService(req);
 
-  let index = companies.indexOf(company);
-
-  companies[index] = updatedCompany;
-
-  res.status(200).json({ messagem: "Company updated", companies });
+  res.status(200).json({ messagem: "Company updated", responseData });
 };
